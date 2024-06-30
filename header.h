@@ -9,7 +9,6 @@ class Video{
         string genre;
         string production;
         string quantity;
-        string filename;
     public:
         Video();
         void insert_video();
