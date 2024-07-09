@@ -11,12 +11,12 @@ class Video{
         string quantity;
     public:
         Video();
-        void insert_video();
-        void rent_video(string movie_title);
-        void return_video(string movie_title);
-        void details_video(string movie_title);
+        void insert_video(string movie_title, string genre, string production, string quantity);
+        void rent_video(int video_id);
+        void return_video(int video_id);
+        void details_video(int video_id);
         void display_all();
-        bool check_video_status(string movie_title);
+        bool check_video_status(int video_id);
 };
 
 class Customer{
@@ -26,18 +26,17 @@ class Customer{
         string customer_address;
     public:
         Customer();
-        void add_customer();
-        void display_customer_details();
+        void add_customer(string customer_name, string customer_address);
+        void display_customer_details(int customer_id);
         void display_all();
 };
 
 class Customer_Rent{
     private:
         int customer_id;
-        int Video_ID;
     public:
         Customer_Rent();
-        void rent_video();
+        void rent_video(int customer_id);
         void return_video();
         void display_all();
 };
