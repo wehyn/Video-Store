@@ -38,5 +38,5 @@ class Customer_Rent{
         Customer_Rent();
         void rent_video(int customer_id);
         void return_video();
-        void display_all();
+        void display_all(); // Prints all rented videos by each customer
 };
